@@ -19,8 +19,15 @@ public class MainActivity extends AppCompatActivity {
     int totalQuestions;
     ArrayList<Question> questions;
 
-    // TODO 3-A: Declare View member variables
-
+    // Declare View member variables
+    final ImageView questionImageView = findViewById(R.id.iv_main_question_image);
+    final TextView questionTextView = findViewById(R.id.tv_main_question_title);
+    final TextView questionsRemainingTextView = findViewById(R.id.tv_main_questions_remaining_count);
+    final Button answer0Button = findViewById(R.id.btn_main_answer_0);
+    final Button answer1Button = findViewById(R.id.btn_main_answer_1);
+    final Button answer2Button = findViewById(R.id.btn_main_answer_2);
+    final Button answer3Button = findViewById(R.id.btn_main_answer_3);
+    final Button submitButton = findViewById(R.id.btn_main_submit_answer);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
